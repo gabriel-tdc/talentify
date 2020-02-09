@@ -1,0 +1,65 @@
+/* Fix */
+	body, html{
+		width: 100%;
+		height: 100%;
+		background-color: #e5eef9;
+	}
+
+/* Menu */
+	.navbar{
+		background-color: #e5eef9;
+	}
+	.navbar-nav .nav-item .nav-link{
+		color:#37465a;
+	}
+
+/* Globals  */
+	img{
+		max-width: 100%;
+	}
+
+	.btn-primary{
+		background-color: transparent;
+		border: 2px solid rgb(55, 70, 90);
+		color: rgb(55,70,90);
+		padding: 5px 32px;
+		height: 38px;
+	}
+
+	.title{
+		position: relative;
+		display: inline-block;
+		color:#34495e;
+		font-size: 69px;
+	}
+
+	.title:after,
+	.title:before{
+		content: '';
+		position: absolute;
+		width: 50px;
+		height: 4px;
+		background-color: #ea2045;
+		top:50%;
+	}
+
+
+	.title:after{
+		right: -65px;
+	}
+
+	.title:before{
+		left: -65px;
+	}
+
+	.bg-white{
+		border-radius: .25rem;
+		padding: 60px;
+		background-color: #fff;
+		box-shadow: 0 0 6px 0 rgba(142,163,184,.14);
+		border: solid 1px #e9f0f6;
+	}
+
+	.card-disabled{
+		opacity: 0.6;
+	}
