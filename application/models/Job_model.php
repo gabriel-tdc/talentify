@@ -34,7 +34,7 @@ class Job_model extends CI_Model {
 	}
 
 	// Obter os jobs ativos do banco de dados
-	public function get($search){
+	public function get($search = NULL){
 		if($search){
 			$this->db->or_like('title', $search);
 			$this->db->or_like('description', $search);
