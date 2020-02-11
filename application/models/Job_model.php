@@ -12,7 +12,7 @@ class Job_model extends CI_Model {
 	// Adicionar um usuário ao banco de dados
 	public function add($data){
 		$this->title		= $data->title;
-		$this->slug			= $data->slug;
+		$this->slug		= $data->slug;
 		$this->description	= $data->description;
 		$this->status		= $data->status;
 		$this->workplace	= $data->workplace;
