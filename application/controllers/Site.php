@@ -16,9 +16,9 @@ class Site extends CI_Controller {
 	}
 
 	public function index() {
-		$this->load->library('curl');
+		$this->load->library('Curl');
 
-		$jobs = $this->curl->exec(
+		$jobs = $this->Curl->exec(
 			base_url('jobs/get')
 		);
 
@@ -38,11 +38,11 @@ class Site extends CI_Controller {
 
 	public function vagas() {
 		$this->load->helper('text');
-		$this->load->library('curl'); 
+		$this->load->library('Curl'); 
 		
 		$search = $this->input->post('search');
 
-		$jobs = $this->curl->exec(
+		$jobs = $this->Curl->exec(
 			base_url('jobs/get'),
 			array('search' => $search)
 		);
